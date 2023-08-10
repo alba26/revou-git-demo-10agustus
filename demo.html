@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styling -->
+    <style>
+        .fruit {
+            color: red;
+        }
+        #buah {
+            color: blue;
+        }
+        .divWithBoxSizing {
+            background-color: brown;
+            width: 100px;
+            border: 10px solid black;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .divWithoutBoxSizing {
+            margin-top: 10px;
+            background-color: yellow;
+            width: 100px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+        .flexBox {
+            display: flex;
+            background-color: darkgrey;
+            flex-direction: row;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexBox">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+        <h1>5</h1>
+    </div>
+
+
+    <div class="divWithBoxSizing">
+        <h1 class="fruit">
+            Anggur
+        </h1>
+    </div>
+    <div class="divWithoutBoxSizing">
+        <h1 id="buah" class="fruit">
+            Jeruk
+        </h1>
+    </div>
+
+</body>
+</html>
